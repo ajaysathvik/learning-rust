@@ -66,7 +66,13 @@ fn main() {
     // let _y = (_x as f64).sqrt();
     // println!("{}",_y);  
 
-
+    // let is_coding_fun = true;
+    // let is_fish_tasty = true;
+    // println!("{}",is_coding_fun);
+    // println!("{}",is_fish_tasty);
+    // let x = 5;
+    // let y = 10;
+    // println!("{}",x>y);
 
 }
   
