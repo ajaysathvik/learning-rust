@@ -74,5 +74,19 @@ fn main() {
     // let y = 10;
     // println!("{}",x>y);
 
+    // let x = 5;
+    // let y = 10;
+    // if x > y {
+    //     println!("x is greater than y");
+    // } 
+    // else if y>x{
+    //     println!("x is less than y");
+    // }
+    // else {
+    //     println!("x is equal to y");
+    // }
+
+    let time = 22;
+    let result = ( time < 10) ? "Good Morning" : "Good Evening";
 }
   
