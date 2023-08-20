@@ -1,3 +1,5 @@
+use std::io::stdin;
+
 fn main() {
     // println!("Hello, world!");
     // println!("I'm a AJAY");
@@ -38,5 +40,22 @@ fn main() {
     // println!("{}",greetings.len());
     // println!("{}",name.len());
 
+    // let mut x = String::new();
+    // stdin().read_line(&mut x).expect("Failed to read line"); 
+    // let _x: usize = x.trim().parse().expect("Failed to parse x"); // parse() is used to convert string to integer
+    // let mut y = String::new();
+    // stdin().read_line(&mut y).expect("Failed to read line");
+    // let _y:usize=y.trim().parse().expect("failed to parse y");
+    // if _x>_y {
+    //     println!("x is greater than y");
+    // }
+    // else if _x<_y {
+    //     println!("x is less than y");
+    // }
+    // else {
+    //     println!("x is equal to y");
+    // }
+
     
+
 }
