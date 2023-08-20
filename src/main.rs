@@ -1,4 +1,5 @@
-use std::io::stdin;
+// use std::io::stdin;
+// use std::f64;
 
 fn main() {
     // println!("Hello, world!");
@@ -51,11 +52,21 @@ fn main() {
     // }
     // else if _x<_y {
     //     println!("x is less than y");
-    // }
+    // } 
     // else {
     //     println!("x is equal to y");
     // }
 
-    
+    // let x: f64 = 16.0;
+    // println!("{}",x.sqrt());
+
+    // let mut x = String::new();
+    // stdin().read_line(&mut x).expect("Failed to read line");
+    // let _x:usize = x.trim().parse().expect("Failed to parse x");
+    // let _y = (_x as f64).sqrt();
+    // println!("{}",_y);  
+
+
 
 }
+  
