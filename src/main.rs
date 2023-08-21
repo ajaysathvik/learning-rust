@@ -86,7 +86,6 @@ fn main() {
     //     println!("x is equal to y");
     // }
 
-    let time = 22;
-    let result = ( time < 10) ? "Good Morning" : "Good Evening";
+    
 }
   
