@@ -86,6 +86,9 @@ fn main() {
     //     println!("x is equal to y");
     // }
 
-    
+    let arr = [0,1,2,3,4,5];
+    for i in arr.iter() {
+        print!("{} ",i);
+    }
 }
   
