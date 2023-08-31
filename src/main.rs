@@ -1,6 +1,6 @@
-use std::io::stdin;
+// use std::io::stdin;
 // use std::f64;
-use rand::Rng;
+// use rand::Rng;
 
 fn main() {
     // println!("Hello, world!");
@@ -92,21 +92,56 @@ fn main() {
     //     print!("{} ",i);
     // }
 
-    let secret_number = rand::thread_rng().gen_range(1..=100);
-    // println!("The secret number is: {}", secret_number);
-    loop {
-        println!("Guess the number!");
-        let mut guess = String::new();
-        stdin().read_line(&mut guess).expect("Failed to read line");
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
-        println!("You guessed: {}", guess);
-        if guess == secret_number {
-            println!("You win!");
-            break;
-        } else {
-            println!("You lose!");
-        }
-    }
+    // let secret_number = rand::thread_rng().gen_range(1..=100); // generate random number between 1 and 100
+    // // println!("The secret number is: {}", secret_number);
+    // loop {
+    //     println!("Guess the number!");
+    //     let mut guess = String::new();
+    //     stdin().read_line(&mut guess).expect("Failed to read line");
+    //     let guess: u32 = guess.trim().parse().expect("Please type a number!");
+    //     println!("You guessed: {}", guess);
+    //     if guess == secret_number {
+    //         println!("You win!");
+    //         break;
+    //     } else {
+    //         println!("You lose!");
+    //     }
+    // }
 
-    
+    /* DAY7 */
+    // let mut a=0;
+    // loop {
+    //     println!("{}",a);
+    //     a+=1;
+    // } // infinite loop
+
+    // let mut a = 0;
+    // while a < 10 {
+    //     println!("{}", a);
+    //     a += 1;
+    // } // while loop
+
+    // for i in 0..10 {
+    //     println!("{}", i);
+    // }// for loop with range 0 to 9
+
+    let arr = [1,2,3,4,5];
+    for a in 0..arr.len() {
+        println!("{}", arr[a]); // print array elements
+    }
+    for a in arr.iter() {
+        println!("{}", a); // print array elements
+    }
+    for a in arr{
+        println!("{}", a); // print array elements
+    }
+    for a in arr.iter().rev() {
+        println!("{}", a); // print array elements in reverse order
+    }
+    for a in arr.len()-1..0 {
+        println!("{}", arr[a]); // print array elements in reverse order
+    }
+    for a in (0..arr.len()).rev() {
+        println!("{}", arr[a]); // print array elements in reverse order
+    }
 }
