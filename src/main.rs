@@ -125,25 +125,36 @@ fn main() {
     //     println!("{}", i);
     // }// for loop with range 0 to 9
 
-    let arr = [1,2,3,4,5];
-    for a in 0..arr.len() {
-        println!("{}", arr[a]); // print array elements
-    }
-    for a in arr.iter() {
-        println!("{}", a); // print array elements
-    }
-    for a in arr{
-        println!("{}", a); // print array elements
-    }
-    for a in arr.iter().rev() {
-        println!("{}", a); // print array elements in reverse order
-    }
-    for a in arr.len()-1..0 {
-        println!("{}", arr[a]); // print array elements in reverse order
-    }
-    for a in (0..arr.len()).rev() {
-        println!("{}", arr[a]); // print array elements in reverse order
-    }
+    // let arr = [1,2,3,4,5];
+    // for a in 0..arr.len() {
+    //     println!("{}", arr[a]); // print array elements
+    // }
+    // for a in arr.iter() {
+    //     println!("{}", a); // print array elements
+    // }
+    // for a in arr{
+    //     println!("{}", a); // print array elements
+    // }
+    // for a in arr.iter().rev() {
+    //     println!("{}", a); // print array elements in reverse order
+    // }
+    // for a in arr.len()-1..0 {
+    //     println!("{}", arr[a]); // print array elements in reverse order
+    // }
+    // for a in (0..arr.len()).rev() {
+    //     println!("{}", arr[a]); // print array elements in reverse order
+    // }
 
-    
+    // {
+    //     let a =10;
+    //     println!("{}",a);
+    // }
+    // println!("{}",a); // error: variable a is not in scope
+
+    // let str1 = String::from("Hello");
+    // let str2 = str1;
+    // println!("{}",str1); // error: value borrowed here after move
+    // println!("{}",str2); // no error
+    // let str3 = str2.clone();
+    // println!("{}",str3); // no error
 }
