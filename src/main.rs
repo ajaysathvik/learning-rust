@@ -144,5 +144,6 @@ fn main() {
     for a in (0..arr.len()).rev() {
         println!("{}", arr[a]); // print array elements in reverse order
     }
+
     
 }
