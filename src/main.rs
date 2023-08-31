@@ -1,5 +1,6 @@
-// use std::io::stdin;
+use std::io::stdin;
 // use std::f64;
+use rand::Rng;
 
 fn main() {
     // println!("Hello, world!");
@@ -20,7 +21,7 @@ fn main() {
     // let z = a+b;
     // println!("a = {} and b = {} and a+b = {}", a,b,z);
 
-    // let mut input = String::new(); // mutable variable 
+    // let mut input = String::new(); // mutable variable
     // std::io::stdin().read_line(&mut input).expect("Failed to read line");
     // print!("You entered {}", input);
 
@@ -42,7 +43,7 @@ fn main() {
     // println!("{}",name.len());
 
     // let mut x = String::new();
-    // stdin().read_line(&mut x).expect("Failed to read line"); 
+    // stdin().read_line(&mut x).expect("Failed to read line");
     // let _x: usize = x.trim().parse().expect("Failed to parse x"); // parse() is used to convert string to integer
     // let mut y = String::new();
     // stdin().read_line(&mut y).expect("Failed to read line");
@@ -52,7 +53,7 @@ fn main() {
     // }
     // else if _x<_y {
     //     println!("x is less than y");
-    // } 
+    // }
     // else {
     //     println!("x is equal to y");
     // }
@@ -64,7 +65,7 @@ fn main() {
     // stdin().read_line(&mut x).expect("Failed to read line");
     // let _x:usize = x.trim().parse().expect("Failed to parse x");
     // let _y = (_x as f64).sqrt();
-    // println!("{}",_y);  
+    // println!("{}",_y);
 
     // let is_coding_fun = true;
     // let is_fish_tasty = true;
@@ -78,7 +79,7 @@ fn main() {
     // let y = 10;
     // if x > y {
     //     println!("x is greater than y");
-    // } 
+    // }
     // else if y>x{
     //     println!("x is less than y");
     // }
@@ -86,9 +87,26 @@ fn main() {
     //     println!("x is equal to y");
     // }
 
-    let arr = [0,1,2,3,4,5];
-    for i in arr.iter() {
-        print!("{} ",i);
+    // let arr = [0,1,2,3,4,5];
+    // for i in arr.iter() {
+    //     print!("{} ",i);
+    // }
+
+    let secret_number = rand::thread_rng().gen_range(1..=100);
+    // println!("The secret number is: {}", secret_number);
+    loop {
+        println!("Guess the number!");
+        let mut guess = String::new();
+        stdin().read_line(&mut guess).expect("Failed to read line");
+        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        println!("You guessed: {}", guess);
+        if guess == secret_number {
+            println!("You win!");
+            break;
+        } else {
+            println!("You lose!");
+        }
     }
+
+    
 }
-  
