@@ -160,15 +160,49 @@ fn main() {
 
     // let str1 = String::from("Hello");
     // let str2 = str1;
-    // println!("{}\n{}", str1, str2); // no error
-    // let s1 = string(&str1);
+    // println!("{}\n{}", str1, str2); // no error  
     
-    // let str1 = String::from("Hello");
-    // let str2 = str1.clone();
-    // println!("{}\n{}", str1, str2); // no error    
+    // let s1 = String::from("Ajay");
+    // let len = calculate_length(&s1);
+    // println!("The length of '{}' is {}.", s1, len);
 
+    // let s = "hello world";
+    // let hello = &s[0..5];
+    // let world = &s[6..11];
+    // let all = &s[..];
+    // let world2 = &s[6..];
+    // let hello2 = &s[..5];
+    // println!("{}\n{}\n{}", hello, world, all);
+    // println!("{}\n{}", world2, hello2);
+    
+    // #[derive(Debug)]
+    // struct User {
+    //     username: String,
+    //     email: String,
+    //     sign_in_count: u64,
+    //     active: bool,
+    // }
+    // let mut user1 = User {
+    //     username: String::from("Ajay"),
+    //     email: String::from("ajaysathvik@outlook.com"),
+    //     sign_in_count: 1,
+    //     active: true,
+    // };
+    // let user2:User;
+    // user2 = User {
+    //     username: String::from("Sathvik"),
+    //     email: String::from(""),
+    //     sign_in_count: 0,
+    //     active: false,
+    // };
+    // println!("{:?f}",user1); // print the structure user1 with debug trait {:?}
+    // user1.username = "Ajay Sathvik".to_string();
+    // println!("{} \n{} \n{} \n{}", user1.username, user1.email, user1.sign_in_count, user1.active);
+
+    /* DAY8 */
+    
 }
 
-// fn string(str1: &str) {
-//     println!("{}", str1);
+// fn calculate_length(s: &String) -> usize {
+//     s.len()
 // }
