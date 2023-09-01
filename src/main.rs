@@ -162,8 +162,11 @@ fn main() {
     // let str2 = str1;
     // println!("{}\n{}", str1, str2); // no error
     // let s1 = string(&str1);
-
     
+    // let str1 = String::from("Hello");
+    // let str2 = str1.clone();
+    // println!("{}\n{}", str1, str2); // no error    
+
 }
 
 // fn string(str1: &str) {
