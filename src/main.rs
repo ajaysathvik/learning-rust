@@ -6,6 +6,9 @@ use std::collections::HashMap;
 use std::process::Stdio;
 
 fn main() {
+
+    
+    /* Day 6 */
     // println!("Hello, world!");
     // println!("I'm a AJAY");
 
@@ -111,6 +114,7 @@ fn main() {
     //     }
     // }
 
+
     /* DAY7 */
     // let mut a = 0;
     // loop {
@@ -201,6 +205,7 @@ fn main() {
     // println!("{:?f}",user1); // print the structure user1 with debug trait {:?}
     // user1.username = "Ajay Sathvik".to_string();
     // println!("{} \n{} \n{} \n{}", user1.username, user1.email, user1.sign_in_count, user1.active);
+
 
     /* DAY8 */
     // struct Rectangle {
@@ -309,8 +314,10 @@ fn main() {
     // score.insert(String::from("Yellow"), 50); // insert a new key-value pair into the hashmap
     // println!("{:?}", score); // print the hashmap score
 
-    /* Day 9 */
 
+    /* Day 9 */
+    // Generics in Rust
+    
 }
 
 // fn calculate_length(s: &String) -> usize {
