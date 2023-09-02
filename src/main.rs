@@ -1,7 +1,11 @@
+// use std::error::Error;
 // use std::io::stdin;
 // use std::collections::HashMap; 
 // use std::f64;
 // use rand::Rng;
+// use std::io::ErrorKind;
+// use std::fs::File;
+// use std::io::{self, Read};
 
 // use std::process::Stdio;
 
@@ -394,8 +398,65 @@ fn main() {
     // Error Handling in Rust
     // it is used to handle the errors in Rust
     // two types of errors in Rust are recoverable errors and unrecoverable errors
+    // recoverable errors are handled when the error occurs and the program continues to run after handling the error
+    // unrecoverable errors are handled when the error occurs and the program exits after handling the error
+
+    // 1. recvoverable errors
+    // panic!("crash and burn"); // panic! macro is used to handle the recoverable errors
+    // enum Result<T, E> {
+    //     Ok(T),
+    //     Err(E),
+    // }
+
+    // let f = File::open("hello.txt").expect("cant open  file"); // unwrap() method is used to handle the recoverable errors
+    
+    // fn read_username_from_file()->Result<(),Box<dyn Error>>{
+    //     let username_file_result = File::open("hello.txt")?;
+    //     Ok(())
+    // }
+
+    // fn read_username_from_file()->Result<String,io::Error>{
+    //     let username_file_result = File::open("hello.txt");
+    //     let mut username_file = match username_file_result{
+    //         Ok(file)=>file,
+    //         Err(error)=>return Err(error),
+    //     };
+    //     let mut username = String::new();
+    //     match username_file.read_to_string(&mut username){
+    //         Ok(_) => Ok(username),
+    //         Err(error) => Err(error),
+    //     }
+    // }
+
+    // let filled = match f {
+    //     Ok(file) => file,
+    //     Err(error) => panic!("{}", error),
+    // };
+    // let filled = match f {
+    //     Ok(file) => file,
+    //     Err(error) => match error.kind() {
+    //         ErrorKind::NotFound => match File::create("hello.txt") {
+    //             Ok(fc) => fc,
+    //             Err(error) => panic!("{}", error),
+    //         },
+    //         other_error => panic!("{}", other_error),
+    //     },
+    // };
     
 
+    // 2. unrecoverable errors
+    // let v = vec![1, 2, 3];
+    // v[99]; // index out of bounds error
+
+    // Closure in Rust
+    // it is used to define a function without a name and it is also called as anonymous function
+    // let x = 10;
+    // let y = 20;
+    // println!("{} {}",x,y);
+    // let add = |x: i32, y: i32| {
+    //     println!("{}",x+y);
+    // }; // closure
+    // add(x,y);
 }
 
 // fn add<'a>(a: &'a i32, b: &'a i32) ->&'a i32 {
