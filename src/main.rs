@@ -1,9 +1,9 @@
 // use std::io::stdin;
-use std::collections::HashMap;
+// use std::collections::HashMap; 
 // use std::f64;
 // use rand::Rng;
 
-use std::process::Stdio;
+// use std::process::Stdio;
 
 fn main() {
     /* Day 6 */
@@ -382,9 +382,26 @@ fn main() {
     // };
     // print_area(c1);
 
+
+    /* Day 10 */
+    // Lifetime in Rust
+    // it is used to specify the lifetime of a variable or a constant or a function or a method or a parameter or a return type or a structure or an enum or a trait or a function pointer or a closure or a reference or a pointer in Rust
+    // let x=5;
+    // let y = 12;
+    // let z: &i32 = add(&x,&y);
+    // println!("{}",z);
+
+    // Error Handling in Rust
+    // it is used to handle the errors in Rust
+    // two types of errors in Rust are recoverable errors and unrecoverable errors
     
-    
+
 }
+
+// fn add<'a>(a: &'a i32, b: &'a i32) ->&'a i32 {
+//     &(a + b)
+// }
+
 // trait HasArea {
 //     fn area(&self) -> f64;
 // }
@@ -408,7 +425,7 @@ fn main() {
 //             largest = item;
 //         }
 //     }
-//     largest
+//     largest 
 // }
 // fn largest<T:std::cmp::PartialOrd>(list:&[T]) -> &T{
 //     let mut largest = &list[0];
