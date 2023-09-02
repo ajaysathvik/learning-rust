@@ -1,4 +1,5 @@
 // use std::io::stdin;
+use std::collections::HashMap;
 // use std::f64;
 // use rand::Rng;
 
@@ -202,10 +203,10 @@ fn main() {
     // println!("{} \n{} \n{} \n{}", user1.username, user1.email, user1.sign_in_count, user1.active);
 
     /* DAY8 */
-    struct Rectangle {
-        width: u32,
-        height: u32,
-    }
+    // struct Rectangle {
+    //     width: u32,
+    //     height: u32,
+    // }
     // impl Rectangle {
     //     fn area(&self) -> u32 {
     //         self.width * self.height
@@ -238,14 +239,78 @@ fn main() {
     // let sq = Rectangle::square(3);
     // println!("The area of the square is {} square pixels.", sq.area());
 
-    // let rect1 = Rectangle {
-    //     width: 30,
-    //     height: 50,
-    // };
-    // fn area(rectangle: Rectangle) -> u32 {
-    //     rectangle.width * rectangle.height
+    // struct Rectangle{
+    //     width:u32,
+    //     length:u32,
     // }
-    // print!("{}", area(rect1));
+    // let rect1 = Rectangle{
+    //     width:30,length:30,
+    // };
+    // println!("The area of the rectangle is {} square pixels.",area(&rect1));
+    // fn area(rectangle :&Rectangle)-> u32{
+    //     rectangle.width * rectangle.length
+    // }
+    // impl Rectangle {
+    //     fn area(&self) -> u32 {
+    //         self.width * self.length
+    //     }
+    //     fn perimeter(&self) -> u32{
+    //         (2*self.width) + (self.length*2)
+    //     }
+    // }
+    // println!("The area of the rectangle is {} square pixels.",rect1.area());
+    // println!("The perimeter of the rectangle is {} square pixels.",rect1.perimeter());
+
+    // #[derive(Debug)]    
+    // enum IpAddrKind {
+    //     V4,
+    //     V6,
+    // }
+    // struct IpAddr{
+    //     kind:IpAddrKind,
+    //     address:String,
+    // }
+    // let home = IpAddr{
+    //     kind:IpAddrKind::V4,
+    //     address:String::from("127.0.0.1"),
+    // };
+    // let loopback = IpAddr{
+    //     kind:IpAddrKind::V6,
+    //     address:String::from("::1"),
+    // };
+    // println!("{:?}\n{:?}",home.kind,home.address);
+
+    // let mut v: Vec<i32> = Vec::new(); // create a new vector v of type Vec<i32>
+    // v.push(5); // push 5 into the vector v
+    // v.push(6); // push 6 into the vector v
+    // v.push(7); // push 7 into the vector v
+    // v.push(8); // push 8 into the vector v
+
+    // let mut vec = vec![1, 2, 3]; // create a new vector v of type Vec<i32> with values 1,2,3
+    // vec.push(69);
+    // vec.pop();
+    // let first: &i32 = &vec[0]; // get the first element of the vector
+    // println!("The third element is {}", first);
+    // let third: Option<&i32> = vec.get(2); // get the third element of the vector
+    // match third {
+    //     Some(i) => println!("The third element is {}", i),
+    //     None => println!("There is no third element."),
+    // }   
+
+    // let mut s1 = String::from("hello");
+    // let mut s2 = String::from("world");
+    // let mut s3 = s1 + &s2; // s1 has been moved here and can no longer be used
+    // println!("{}", s1);
+    // println!("{}", s2);
+    // println!("{}", s3);
+
+    // let mut score: HashMap<String, u32> = HashMap::new(); // create a new hashmap score
+    // score.insert(String::from("Blue"), 10); // insert a new key-value pair into the hashmap
+    // score.insert(String::from("Yellow"), 50); // insert a new key-value pair into the hashmap
+    // println!("{:?}", score); // print the hashmap score
+
+    /* Day 9 */
+
 }
 
 // fn calculate_length(s: &String) -> usize {
