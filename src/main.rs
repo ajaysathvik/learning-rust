@@ -6,8 +6,6 @@ use std::collections::HashMap;
 use std::process::Stdio;
 
 fn main() {
-
-
     /* Day 6 */
     // println!("Hello, world!");
     // println!("I'm a AJAY");
@@ -114,7 +112,6 @@ fn main() {
     //     }
     // }
 
-
     /* DAY7 */
     // let mut a = 0;
     // loop {
@@ -206,7 +203,6 @@ fn main() {
     // user1.username = "Ajay Sathvik".to_string();
     // println!("{} \n{} \n{} \n{}", user1.username, user1.email, user1.sign_in_count, user1.active);
 
-
     /* DAY8 */
     // struct Rectangle {
     //     width: u32,
@@ -266,7 +262,7 @@ fn main() {
     // println!("The area of the rectangle is {} square pixels.",rect1.area());
     // println!("The perimeter of the rectangle is {} square pixels.",rect1.perimeter());
 
-    // #[derive(Debug)]    
+    // #[derive(Debug)]
     // enum IpAddrKind {
     //     V4,
     //     V6,
@@ -300,7 +296,7 @@ fn main() {
     // match third {
     //     Some(i) => println!("The third element is {}", i),
     //     None => println!("There is no third element."),
-    // }   
+    // }
 
     // let mut s1 = String::from("hello");
     // let mut s2 = String::from("world");
@@ -313,7 +309,6 @@ fn main() {
     // score.insert(String::from("Blue"), 10); // insert a new key-value pair into the hashmap
     // score.insert(String::from("Yellow"), 50); // insert a new key-value pair into the hashmap
     // println!("{:?}", score); // print the hashmap score
-
 
     /* Day 9 */
     // Generics in Rust
@@ -355,7 +350,47 @@ fn main() {
     // let both_float = Point { x: 5.0, y: 10.0, z: 15 };
     // let integer_and_float = Point { x: 5, y: 10.0, z: 15 };
 
+    // Traits in Rust
+    // it is used to define the behaviour of a data type or a structure or an enum or a function or a method or a parameter or a return type or a variable or a constant
+    // trait read {
+    //     fn input()->i32;
+    //     fn output()->i32;
+    // }
+    // impl read fn book(){
+    //     fn input()->i32{
+    //         // any code
+    //     }
+    //     fn output()->i32{
+    //         // any code
+    //     }
+    // }
+
+    // struct Circle {
+    //     x: f64,
+    //     y: f64,
+    //     radius: f64,
+    // }
+    // impl HasArea for Circle {
+    //     fn area(&self) -> f64 {
+    //         std::f64::consts::PI * (self.radius * self.radius)
+    //     }
+    // }
+    // let c1 = Circle {
+    //     x: 0.0f64,
+    //     y: 0.0f64,
+    //     radius: 2.0f64,
+    // };
+    // print_area(c1);
+
+    
+    
 }
+// trait HasArea {
+//     fn area(&self) -> f64;
+// }
+// fn print_area<T: HasArea>(Shape: T) {
+//     println!("This shape has an area of {}", Shape.area());
+// }
 
 // fn largestnum(list: &[i32]) -> i32 {
 //     let mut largest = list[0];
