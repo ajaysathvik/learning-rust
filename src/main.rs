@@ -7,7 +7,7 @@ use std::process::Stdio;
 
 fn main() {
 
-    
+
     /* Day 6 */
     // println!("Hello, world!");
     // println!("I'm a AJAY");
@@ -317,8 +317,73 @@ fn main() {
 
     /* Day 9 */
     // Generics in Rust
-    
+    //it is used to reduce the code duplication by using the same code for different data types
+    // fn generic_add<t>(a:t,b:t)->t{
+    //     a+b // t is a generic type which can be any data type
+    // }
+
+    // let number_list = vec![34, 50, 25, 100, 65];
+    // let result = largest(&number_list);
+    // println!("The largest number is {}", result);
+    // let char_list = vec!['y', 'm', 'a', 'q'];
+    // let result = largest(&char_list);
+    // println!("The largest char is {}", result);
+
+    // struct Pointint{
+    //     x:i32,
+    //     y:i32,
+    // }
+    // let integer = Pointint{x:5,y:10};
+    // struct Pointfloat{
+    //     x:f32,
+    //     y:f32,
+    // }
+    // let float = Pointfloat{x:5.0,y:10.0};
+    // struct Pointgeneric<T>{
+    //     x:T,
+    //     y:T,
+    // }
+    // let integer = Pointgeneric{x:5,y:10};
+    // let float = Pointgeneric{x:5.0,y:10.0};
+
+    // struct Point<T, U,V> {
+    //     x: T,
+    //     y: U,
+    //     z: V,
+    // }
+    // let both_integer = Point { x: 5, y: 10, z: 15.0 };
+    // let both_float = Point { x: 5.0, y: 10.0, z: 15 };
+    // let integer_and_float = Point { x: 5, y: 10.0, z: 15 };
+
 }
+
+// fn largestnum(list: &[i32]) -> i32 {
+//     let mut largest = list[0];
+//     for &item in list.iter() {
+//         if item > largest {
+//             largest = item;
+//         }
+//     }
+//     largest
+// }
+// fn largestchar(list: &[char]) -> char {
+//     let mut largest = list[0];
+//     for &item in list.iter() {
+//         if item > largest {
+//             largest = item;
+//         }
+//     }
+//     largest
+// }
+// fn largest<T:std::cmp::PartialOrd>(list:&[T]) -> &T{
+//     let mut largest = &list[0];
+//     for i in list{
+//         if i > largest{
+//             largest = i;
+//         }
+//     }
+//     largest
+// }
 
 // fn calculate_length(s: &String) -> usize {
 //     s.len()
